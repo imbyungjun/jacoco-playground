@@ -29,7 +29,7 @@ jobs:
 
     - name: Jacoco Report to PR
       id: jacoco
-      uses: imbyungjun/jacoco-report@942e00129687a3866cb77272a8030a5fd4392ce2
+      uses: imbyungjun/jacoco-report@a4f68dd88e8391b653acac26bb1ad5e7fe694616
       with:
         paths: ${{ github.workspace }}/build/reports/jacoco/testCoverage/testCoverage.xml
         token: ${{ secrets.GITHUB_TOKEN }}
