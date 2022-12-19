@@ -35,7 +35,8 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         min-coverage-overall: 40
         min-coverage-changed-files: 60
-        debug-mode: false
+        debug-mode: true
+        skip-on-no-changes: true
 
     - name: Get the Coverage info
       run: |
